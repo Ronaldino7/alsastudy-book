@@ -91,21 +91,27 @@
   <script src="script.js"></script>
   <!-- ...existing code... -->
 
+<!-- ...existing code... -->
+
 <div class="transition-overlay" id="transitionOverlay"></div>
 <script>
-  // Transisi modern saat klik tombol resume
-  document.querySelector('.btn-modern').addEventListener('click', function(e) {
-    e.preventDefault();
-    const overlay = document.getElementById('transitionOverlay');
-    overlay.classList.add('active');
-    setTimeout(() => {
-      window.location.href = this.href;
-    }, 600); // waktu transisi sesuai CSS
+  // Transisi modern untuk semua tombol download resume
+  document.querySelectorAll('.btn-download').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const overlay = document.getElementById('transitionOverlay');
+      overlay.classList.add('active');
+      setTimeout(() => {
+        window.open(this.href, '_blank');
+        overlay.classList.remove('active');
+      }, 600);
+    });
   });
 </script>
 <!-- ...existing code... -->
 </body>
 </html>
+
 
 
 
