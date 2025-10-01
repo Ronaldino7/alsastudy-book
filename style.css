@@ -240,6 +240,53 @@ footer p {
   animation: spin 0.8s linear infinite, scaleIn 0.6s cubic-bezier(.77,0,.18,1);
 }
 
+/* Card background images */
+.resume-bg-gender {
+  background: linear-gradient(rgba(79,140,255,0.5),rgba(161,196,253,0.5)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+}
+.resume-bg-konstitusi {
+  background: linear-gradient(rgba(79,140,255,0.5),rgba(161,196,253,0.5)),
+    url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+}
+.resume-bg-haki {
+  background: linear-gradient(rgba(79,140,255,0.5),rgba(161,196,253,0.5)),
+    url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+}
+.resume-bg-perdata {
+  background: linear-gradient(rgba(79,140,255,0.5),rgba(161,196,253,0.5)),
+    url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+}
+.resume-bg-pidana {
+  background: linear-gradient(rgba(79,140,255,0.5),rgba(161,196,253,0.5)),
+    url('https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+}
+.resume-bg-adat {
+  background: linear-gradient(rgba(79,140,255,0.5),rgba(161,196,253,0.5)),
+    url('https://images.unsplash.com/photo-1465101178521-c1a4c8a0a8b7?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+}
+.resume-bg-tatanegara {
+  background: linear-gradient(rgba(79,140,255,0.5),rgba(161,196,253,0.5)),
+    url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+}
+.resume-bg-perdata2 {
+  background: linear-gradient(rgba(79,140,255,0.5),rgba(161,196,253,0.5)),
+    url('https://images.unsplash.com/photo-1465101178521-c1a4c8a0a8b7?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+}
+.resume-bg-pidana2 {
+  background: linear-gradient(rgba(79,140,255,0.5),rgba(161,196,253,0.5)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80') center/cover no-repeat;
+}
+
+/* Agar teks tetap jelas di atas gambar */
+.resume-card {
+  color: #222;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+  border: none;
+}
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
@@ -271,6 +318,7 @@ footer p {
   }
 }
 /* ...existing code... */
+
 
 
 
