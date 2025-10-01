@@ -93,21 +93,26 @@
 
 <!-- ...existing code... -->
 
-<div class="transition-overlay" id="transitionOverlay"></div>
+<div class="transition-overlay" id="transitionOverlay">
+  <div class="transition-spinner"></div>
+</div>
 <script>
-  // Transisi saat klik tombol Home di navbar
-  document.querySelector('.nav-links a[href="home.html"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    const overlay = document.getElementById('transitionOverlay');
-    overlay.classList.add('active');
-    setTimeout(() => {
-      window.location.href = this.href;
-    }, 600);
+  document.querySelectorAll('.btn-download').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const overlay = document.getElementById('transitionOverlay');
+      overlay.classList.add('active');
+      setTimeout(() => {
+        window.open(this.href, '_blank');
+        overlay.classList.remove('active');
+      }, 900); // waktu transisi
+    });
   });
 </script>
 <!-- ...existing code... -->
 </body>
 </html>
+
 
 
 
