@@ -80,8 +80,25 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- ...existing code... -->
+<a href="index.html" class="btn-modern">Lihat Resume</a>
+<!-- ...existing code... -->
+
+<div class="transition-overlay" id="transitionOverlay"></div>
+<script>
+  document.querySelector('.btn-modern').addEventListener('click', function(e) {
+    e.preventDefault();
+    const overlay = document.getElementById('transitionOverlay');
+    overlay.classList.add('active');
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 600);
+  });
+</script>
+<!-- ...existing code... -->
 </body>
 </html>
 </body>
 </html>
+
 
