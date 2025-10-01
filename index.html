@@ -6,21 +6,6 @@
   <title>ALSA Study Book - Versi Modern</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  <!-- ...existing code... -->
-
-<div class="transition-overlay" id="transitionOverlay"></div>
-<script>
-  // Transisi modern saat klik tombol resume
-  document.querySelector('.btn-modern').addEventListener('click', function(e) {
-    e.preventDefault();
-    const overlay = document.getElementById('transitionOverlay');
-    overlay.classList.add('active');
-    setTimeout(() => {
-      window.location.href = this.href;
-    }, 600); // waktu transisi sesuai CSS
-  });
-</script>
-<!-- ...existing code... -->
 <body>
 
   <!-- Navbar -->
@@ -104,8 +89,24 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- ...existing code... -->
+
+<div class="transition-overlay" id="transitionOverlay"></div>
+<script>
+  // Transisi modern saat klik tombol resume
+  document.querySelector('.btn-modern').addEventListener('click', function(e) {
+    e.preventDefault();
+    const overlay = document.getElementById('transitionOverlay');
+    overlay.classList.add('active');
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 600); // waktu transisi sesuai CSS
+  });
+</script>
+<!-- ...existing code... -->
 </body>
 </html>
+
 
 
 
