@@ -95,21 +95,20 @@
 
 <div class="transition-overlay" id="transitionOverlay"></div>
 <script>
-  document.querySelectorAll('.btn-download').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      const overlay = document.getElementById('transitionOverlay');
-      overlay.classList.add('active');
-      setTimeout(() => {
-        window.open(this.href, '_blank');
-        overlay.classList.remove('active');
-      }, 600);
-    });
+  // Transisi saat klik tombol Home di navbar
+  document.querySelector('.nav-links a[href="home.html"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    const overlay = document.getElementById('transitionOverlay');
+    overlay.classList.add('active');
+    setTimeout(() => {
+      window.location.href = this.href;
+    }, 600);
   });
 </script>
 <!-- ...existing code... -->
 </body>
 </html>
+
 
 
 
