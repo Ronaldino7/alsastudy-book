@@ -162,8 +162,6 @@ footer p {
   .menu-toggle {
     display: block;
   }
-  /* Tambahan untuk home-hero */
-/* filepath: c:\Users\kauna\Downloads\Semester 5\PROJECT WEB SAYANGKU\style.css */
 .home-hero {
   background: linear-gradient(135deg, #4f8cff 0%, #a1c4fd 100%);
   min-height: 70vh;
@@ -210,6 +208,7 @@ footer p {
 .btn-modern:hover {
   background: #2d3a5a;
 }
+
 
 
 
