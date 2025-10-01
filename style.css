@@ -142,26 +142,8 @@ footer p {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 200px;
-    flex-direction: column;
-    background: #fff;
-    padding: 20px;
-    display: none;
-    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
-  }
+/* ...existing code... */
 
-  .nav-links a {
-    padding: 10px 0;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
 .home-hero {
   background: linear-gradient(135deg, #4f8cff 0%, #a1c4fd 100%);
   min-height: 70vh;
@@ -208,6 +190,30 @@ footer p {
 .btn-modern:hover {
   background: #2d3a5a;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    display: none;
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+/* ...existing code... */
 
 
 
