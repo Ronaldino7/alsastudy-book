@@ -162,4 +162,53 @@ footer p {
   .menu-toggle {
     display: block;
   }
+  /* Tambahan untuk home-hero */
+/* filepath: c:\Users\kauna\Downloads\Semester 5\PROJECT WEB SAYANGKU\style.css */
+.home-hero {
+  background: linear-gradient(135deg, #4f8cff 0%, #a1c4fd 100%);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(79, 140, 255, 0.15);
 }
+
+.home-hero-content {
+  background: rgba(255,255,255,0.85);
+  padding: 40px 32px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+  max-width: 500px;
+}
+
+.home-hero-content h1 {
+  font-size: 2.5rem;
+  color: #2d3a5a;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  color: #4f8cff;
+  margin-bottom: 28px;
+}
+
+.btn-modern {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #4f8cff;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.15);
+  transition: background 0.2s;
+}
+
+.btn-modern:hover {
+  background: #2d3a5a;
+}
+}
+
